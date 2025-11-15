@@ -28,9 +28,9 @@ The stored-program computer changed everything. The idea, developed independentl
 
 The 1950s brought us FORTRAN, the first high-level programming language that people actually used. Before FORTRAN, you wrote in assembly language, which meant you were essentially writing directly in the computer's native tongue—moving specific bits to specific registers, one instruction at a time. FORTRAN let you write something almost like English: `IF (X .GT. Y) THEN`. The computer would translate that into the tedious assembly instructions.
 
-Programmers hated it at first. Real programmers didn't need this hand-holding. Real programmers wrote in assembly. They knew their machine. This debate—whether abstraction makes us weak or powerful—would repeat itself at every level, in every generation. Real programmers don't need operating systems. Real programmers don't need high-level languages. Real programmers don't need garbage collection. Real programmers don't need TypeScript.
+Programmers hated it at first. "Real programmers" didn't need this hand-holding, they said. Real programmers wrote in assembly. They knew their machine intimately. This debate—whether abstraction makes us weak or powerful—would repeat itself at every level, in every generation. Real programmers don't need operating systems. Real programmers don't need high-level languages. Real programmers don't need garbage collection. Real programmers don't need TypeScript. Each new layer of abstraction brought the same resistance.
 
-Spoiler: abstraction won every time, and we still have this argument every time.
+The pattern is clear: abstraction wins, though not without costs. We gain productivity and accessibility, we lose some control and deep understanding. But the industry keeps choosing abstraction, and we keep having this same argument with each new generation of tools.
 
 ## Why Did We Start Writing Software?
 

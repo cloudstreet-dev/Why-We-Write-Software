@@ -86,9 +86,11 @@ This unleashed an explosion of creativity. One-person studios created breakout h
 
 The indie game scene proved that you don't need photorealistic graphics or Hollywood voice acting to make something people love. You need a good idea, solid execution, and usually one unique mechanic or emotional core that AAA studios wouldn't take a risk on.
 
-But here's the dark side: for every successful indie game, there are thousands that nobody plays. The Steam store adds dozens of new games every day. Standing out is nearly impossible. Most indie developers lose money. The ones who succeed are talented, yes, but also lucky.
+Take Stardew Valley. Eric Barone spent four years building it alone—every pixel of art, every line of code, every music track. He worked a day job as a theater usher while programming at night. No experience in game development. No formal training. Just determination and a vision for the farming sim he wanted to play.
 
-The indie dream is beautiful and brutal in equal measure. It's beautiful because anyone can try. It's brutal because most will fail. But people keep trying anyway, because the alternative—not making games—is worse.
+The game sold over 20 million copies. It made him a multimillionaire. But here's the thing: for every Stardew Valley, there are thousands of games made with equal passion and skill that nobody plays. The Steam store adds dozens of new games every day. Standing out is nearly impossible. Most indie developers lose money. The ones who succeed are talented, yes, but also lucky in ways they often can't replicate.
+
+The indie dream is beautiful and brutal in equal measure. It's beautiful because anyone can try. It's brutal because most will fail. Eric Barone could have spent those four years building nothing that anyone wanted. Many developers do. But people keep trying anyway, because the alternative—not making games—feels like giving up on a part of themselves.
 
 ## Why We Can't Stop
 
@@ -137,6 +139,8 @@ And we can't stop writing them for the same reason we can't stop playing them: b
 It probably won't be. But we'll keep trying anyway.
 
 Because that's what game developers do.
+
+But most programmers don't make games for a living. Most of us write software that's decidedly unglamorous—the enterprise applications, the business logic, the internal tools that nobody outside the company will ever see. That software doesn't get fan art or speedruns, but it does pay the bills. And it has its own rewards, its own challenges, its own reasons for being.
 
 ---
 
