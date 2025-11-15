@@ -2,11 +2,29 @@
 
 No.
 
-Software is never done. Not really. This is the fundamental frustration and the fundamental truth of software development. You can ship it, release it, deploy it to production, mark the ticket as closed, and move on to the next project. But the software itself is never truly finished.
+Software is never done. Not really. This is the fundamental frustration and the fundamental truth of software development.
+
+Wait—you might object. Of course software can be done. You finish implementing the feature. QA tests it and approves. You deploy to production. The ticket is marked "resolved." You move on to the next project. Done, right?
+
+Well, yes and no.
+
+Yes, that particular feature is functionally complete. The code works. It does what it's supposed to do. In that narrow sense, it's "done."
+
+But the software itself? Never finished. Because:
+
+- Users will find edge cases you didn't test
+- They'll request variations you didn't anticipate
+- The feature will need to work with new features built later
+- The platform it runs on will evolve, requiring updates
+- Security vulnerabilities might be discovered
+- Performance might degrade as usage grows
+- The business might change direction, requiring modifications
 
 There's always one more bug. One more feature. One more optimization. One more edge case. One more user requesting one more thing.
 
-The question isn't "Is it done?" The question is "Is it good enough to ship?"
+So the real question isn't "Is it done?" The real question is "Is it good enough to ship right now?"
+
+This chapter is about understanding that distinction—and making peace with it.
 
 ## The Myth of Completion
 
@@ -46,6 +64,32 @@ This works well for startups. It fails catastrophically for medical devices, avi
 None of these is objectively correct. The right approach depends on what you're building and who you're building it for.
 
 But in every case, "done" is a decision, not a state. Someone decides that the software is good enough to ship, knowing that it's not perfect, and that work will continue after release.
+
+## When "Done" Meets Reality
+
+Here's a real story about what "done" actually means:
+
+A team spent six months building a new checkout flow for an e-commerce site. They had requirements. They built to spec. They tested everything: cart management, payment processing, order confirmation, email receipts. QA signed off. The product manager approved. They deployed on a Tuesday morning, confident they were done.
+
+By Tuesday afternoon, customer support was drowning in complaints.
+
+The issues weren't bugs, exactly. The code worked. But:
+
+- The new flow required three more clicks than the old one. Conversion rates dropped 8%.
+- The "Continue as Guest" button was less prominent than "Create Account." Customers thought they had to create accounts, and many abandoned their carts.
+- The payment form didn't remember credit card types, so users on mobile had to manually select "Visa" every time. Annoying enough that people complained.
+- The order confirmation screen loaded slowly because it was making three separate API calls instead of one. Technically worked, but felt broken.
+- International customers got confused by the shipping address format, which was optimized for US addresses.
+
+None of these were in the original requirements. The team had built exactly what was asked for. In that sense, they were "done."
+
+But customers didn't care about requirements. They cared about the experience. And the experience was worse than before.
+
+The team spent the next month fixing issues, A/B testing variations, optimizing performance, and adding features they'd originally scoped out. The checkout flow finally stabilized around month two.
+
+When was it "done"? After the initial deploy? After the first round of fixes? After the A/B tests? After the second round of optimizations? Or is it still not done, since they're still monitoring metrics and tweaking things?
+
+This is the reality of software: "done" is a moment, not a state. You declare victory, ship the code, and immediately start working on what's next. The software continues evolving, with or without your declaration of doneness.
 
 ## The Technical Debt Tax
 
@@ -203,6 +247,18 @@ But until that happens, the software is a living thing, constantly evolving, nev
 ## Making Peace With Incompletion
 
 The hardest thing for new developers to accept is that their work will never be perfect. There will always be bugs you didn't fix, features you didn't implement, code that could be cleaner, designs that could be better.
+
+If you're early in your career, here's something important to understand: "done" operates at multiple levels simultaneously.
+
+**Your task is done** when you've implemented the feature and it passes tests. You can mark the ticket resolved.
+
+**The feature is done** when it's deployed to production and users can access it. You can move to the next project.
+
+**But the software is never done** because it exists in a changing world. Platforms evolve. Requirements change. Users want more. The feature you "finished" will need updates, modifications, and maintenance for as long as it exists.
+
+This can feel demoralizing at first—like you're never really accomplishing anything. But once you internalize it, it's liberating. You stop trying to make things perfect and start shipping value. You understand that software development is iterative, not final. You learn to celebrate shipping, even imperfect shipping, because that's how things get better.
+
+Experienced developers have made peace with this. They know their work will never be perfect. They ship anyway.
 
 You have to make peace with this. You have to accept "good enough" even though you can see all the ways it's not good enough.
 
