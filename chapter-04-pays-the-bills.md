@@ -62,6 +62,34 @@ A typical day in enterprise development:
 
 This is software development in the enterprise. It's not glamorous. It's detective work, archaeology, diplomacy, and careful modification of systems you didn't build and don't fully understand.
 
+## When Enterprise Software Fails
+
+Here's a real story that captures what enterprise development really means:
+
+A major healthcare company discovered that their patient billing system—running for 15 years—had a bug. When patients had multiple insurance providers, the system would sometimes bill the wrong insurance first, triggering automatic rejections. The rejected claims would then sit in a queue that nobody monitored regularly. Patients received incorrect bills. Insurance companies refused to pay. Revenue was being lost, but nobody knew how much.
+
+The bug had been there since the original implementation. It affected maybe 2% of claims—just enough to be invisible in the noise, but at scale, that was thousands of incorrect bills per month. The system had processed tens of millions of claims with this bug lurking in the logic.
+
+A junior developer found it while investigating an unrelated issue. She traced through the code—a nest of if-else statements spanning multiple files, written by at least six different people over the years. The logic for determining "primary insurance" versus "secondary insurance" had an edge case: if a patient had insurance through both their employer and their spouse's employer, and certain other conditions were met, the system would swap them.
+
+Fixing the logic took one line of code. One line.
+
+But deploying it required:
+- Reviewing 15 years of claims data to find affected cases
+- Determining which claims could be rebilled and which were past the filing deadline
+- Coordinating with the finance department on revenue recovery
+- Updating documentation that was already incomplete
+- Training the billing department on the change
+- Testing the fix against thousands of edge cases to ensure it didn't break anything else
+- Scheduling a deployment window that wouldn't disrupt daily operations
+- Creating monitoring to ensure the fix actually worked in production
+
+The project took four months. Multiple teams. Hundreds of hours. All because of one incorrect condition in one if-statement, written by someone who left the company a decade ago.
+
+The junior developer who found it got a "good job" in a team meeting. The project didn't make any business metrics look better—revenue went up slightly, but only back to where it should have been all along. Nobody outside the company ever knew it happened.
+
+This is what enterprise software development looks like at scale. The bug isn't the interesting part. The coordination, the testing, the deployment, the organizational challenge of fixing something that's been broken for 15 years while the business keeps running—that's the real work.
+
 ## The Eternal Struggle: Build vs. Buy
 
 Every few months, someone has a bright idea: "Instead of using this expensive enterprise software, why don't we just build our own?"
@@ -146,7 +174,11 @@ This requires a specific skill set:
 
 **Risk assessment.** Every change might break something. You need to judge whether the risk is worth the benefit, whether you have enough test coverage, whether you should deploy on Friday afternoon (no, you should not).
 
-These skills aren't taught in CS programs. They're learned through painful experience, usually by breaking production at least once.
+**Detective skills.** You become a code archaeologist. You learn to read Git history like a historian reads primary sources. You piece together the story of why this function exists, why it has this weird parameter that's always null, why there's a comment saying "DO NOT REMOVE - breaks customer X's workflow."
+
+**Empathy for past developers.** That terrible code you're fixing? Someone wrote it under pressure, with incomplete requirements, possibly at 2 AM to fix a production outage. They did the best they could with what they had. You would have done the same in their position. Maybe you have.
+
+These skills aren't taught in CS programs. They're learned through painful experience, usually by breaking production at least once. The best enterprise developers have broken production spectacularly, learned from it, and developed the paranoia and caution that prevents future disasters.
 
 ## The Secret Satisfaction
 
