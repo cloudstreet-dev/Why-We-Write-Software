@@ -71,7 +71,7 @@ Software fits into this grand tradition of human making. We're not the first peo
 
 What's different is the speed and the scale. A medieval cathedral took decades. A modern website can go from idea to launch in weeks. The Sistine Chapel ceiling took four years and one genius. A modern open-source project might have thousands of contributors from every continent, many of whom will never meet.
 
-We can build faster than any previous generation. We can also destroy faster, which is why responsible software development matters. Every line of code is a small decision about how the world should work. Multiply that by billions of lines across millions of programs, and you realize: we're not just writing software. We're writing the rules of modern civilization.
+We can build faster than any previous generation. We can also destroy faster, which is why responsible software development matters. Every line of code is a small decision about how the world should work. Multiply that by billions of lines across millions of programs, and you realize: we're not just writing software. We're shaping the infrastructure that modern civilization runs on, one decision at a time.
 
 ## The Cathedral and the Bazaar
 

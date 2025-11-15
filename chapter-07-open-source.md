@@ -213,6 +213,8 @@ The potlatch works when people participate voluntarily, getting non-monetary val
 
 But if you can participate—if you have time, energy, and inclination—the open source community will be richer for it. And so will you, in ways that don't show up in your bank account but matter nonetheless.
 
+Whether we're paid or unpaid, whether we're working on proprietary enterprise software or open source passion projects, we all face the same fundamental question: when is it finished? When can we ship it and move on? Spoiler: never. But that deserves its own chapter.
+
 ---
 
 *Next: Chapter 8 - [Is It Done Yet?](chapter-08-is-it-done.md)*

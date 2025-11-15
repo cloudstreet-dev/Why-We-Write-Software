@@ -234,6 +234,8 @@ Because it's never done.
 
 And that's okay.
 
+But what about the software that was "done" years ago, written by people who've moved on, and is now your problem to maintain? That's a special kind of challenge, and it's where most developers spend most of their time.
+
 ---
 
 *Next: Chapter 9 - [Legacy Code and Digital Archaeology](chapter-09-legacy-code.md)*

@@ -186,6 +186,8 @@ Somebody has to keep the world running.
 
 It might as well be us.
 
+But while we're keeping the visible world running, there's an entire invisible world beneath it—the infrastructure nobody sees, the plumbing that makes everything else possible. That's where we're going next.
+
 ---
 
 *Next: Chapter 5 - [The Art of the Invisible](chapter-05-art-of-invisible.md)*

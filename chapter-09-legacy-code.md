@@ -224,6 +224,10 @@ Treat it with respect, even when it doesn't deserve it.
 
 Because someday, someone will inherit your code. And you'd want them to treat it with respect too.
 
+We've talked about history, infrastructure, economics, and maintenance. We've explored why we write games, enterprise software, and open source. We've examined the bugs and the legacy and the never-ending nature of it all.
+
+But we still haven't answered the biggest question: why will this never stop? Why will there always be more code to write, more problems to solve, more software to build? That's our final question.
+
 ---
 
 *Next: Chapter 10 - [Why We'll Never Stop](chapter-10-never-stop.md)*

@@ -70,7 +70,7 @@ The web meant that software could update itself. Could improve continuously. Cou
 
 Today, software is everywhere. It's in your pocket, on your wrist, in your car, in your doorbell, in orbit above your head. We write software to predict what you want to buy, who you want to date, what you want to watch. We write software to fly planes, to trade stocks faster than humans can think, to diagnose diseases, to generate text that sounds eerily like a human wrote it.
 
-We write more software in a day than existed in the entire world in 1970. GitHub hosts over 100 million repositories. There are an estimated 27 million professional software developers in the world, and millions more who code as part of their jobs. The Stack Overflow question-and-answer database contains over 20 million questions. We are drowning in code.
+The scale is staggering. GitHub hosts over 100 million repositories. There are an estimated 27 million professional software developers in the world, and millions more who code as part of their jobs. The Stack Overflow question-and-answer database contains over 20 million questions. More code is written each year than in the entire first half-century of computing combined. We are drowning in code.
 
 And yet, we keep writing more. Why?
 

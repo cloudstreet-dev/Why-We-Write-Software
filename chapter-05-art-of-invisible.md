@@ -172,6 +172,8 @@ We do this because someone has to. Because the stack needs a bottom. Because the
 
 We are the plumbers of the digital age, and the water flows because we built it right.
 
+But infrastructure doesn't exist in a vacuum. It's built by people, for people, within a society that has expectations about what we should build and how we should build it. That relationship—between programmers and the world—is worth examining.
+
 ---
 
 *Next: Chapter 6 - [The Programmer's Bargain](chapter-06-programmers-bargain.md)*

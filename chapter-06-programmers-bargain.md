@@ -188,6 +188,8 @@ Make sure you're getting a fair deal. And if you're not, make a different one.
 
 You have more agency than you think.
 
+And sometimes, that agency means choosing to give your work away for free. Which sounds crazy in a chapter about getting paid fairly, but might be the most rational thing you can do. Let's talk about the gift economy of code.
+
 ---
 
 *Next: Chapter 7 - [Open Source: The Potlatch of the Digital Age](chapter-07-open-source.md)*
