@@ -24,6 +24,8 @@ Legacy code has many definitions:
 
 Legacy code is not necessarily bad code. Some of it is beautifully written. Some of it is terrible. But all of it shares one characteristic: it exists in a context you don't fully understand, and changing it is risky.
 
+You're an archaeologist, whether you signed up for it or not. Your job is to excavate meaning from artifacts (code) left by people (developers) who are gone, working from fragmentary evidence (comments, commits, documentation), trying to understand a lost civilization (the project as it was years ago).
+
 ## The Archaeology of Understanding
 
 Working with legacy code is like archaeology. You're excavating layers of decisions, trying to understand what the original builders were thinking.
@@ -80,6 +82,38 @@ Sometimes you figure it out: "Oh, they couldn't use the standard library functio
 Sometimes you never figure it out. You just have to accept that this weird code exists for reasons lost to time, and you work around it.
 
 This is archaeology. Piecing together the past from incomplete evidence, trying to understand a context that no longer exists.
+
+## The Day Legacy Code Almost Broke Civilization
+
+Here's the most famous legacy code crisis in history: the Year 2000 problem, better known as Y2K.
+
+For decades, programmers had stored years as two digits to save memory. "1965" became "65." "1987" became "87." This made perfect sense in the 1960s and 70s when memory was expensive and nobody thought their code would still be running in the year 2000.
+
+But it was. And when the calendar rolled over to January 1, 2000, "00" would be interpreted as "1900." Date calculations would break. Systems that calculated age, interest, expiration dates, or anything time-dependent would produce nonsense results. Or crash. Or both.
+
+The problem was discovered in the mid-1990s, which gave the world about five years to fix it. Five years sounds like plenty of time. It wasn't.
+
+Why? Because the code was legacy. The programmers who wrote it were retired or dead. The systems ran on mainframes in COBOL, a language most young developers had never learned. The code was undocumented, untested, and mission-critical. Banks, power grids, air traffic control, nuclear power plants, government benefits systems—all potentially affected.
+
+You couldn't just "find and replace" all the two-digit years with four-digit years, because:
+- Sometimes "65" meant a year (1965)
+- Sometimes "65" meant an age (65 years old)
+- Sometimes "65" meant a department code, or a product ID, or something else entirely
+- The context determined the meaning, and the context was often unclear
+
+So teams of developers—many brought out of retirement—spent years reading through millions of lines of COBOL, trying to understand what each date field represented, changing the ones that needed changing, testing everything, and praying they didn't miss anything.
+
+The estimated cost was $300-600 billion globally. Companies hired consultants at premium rates. Governments created task forces. There was legitimate fear that critical infrastructure might fail.
+
+And then... January 1, 2000 arrived, and mostly nothing happened. A few minor glitches. Some systems had problems. But no catastrophes. The power stayed on. Planes didn't fall from the sky. Banks kept working.
+
+Was Y2K overblown? No. It was successfully mitigated. The reason nothing catastrophic happened is precisely because developers spent years fixing legacy code.
+
+The lesson: code you write today, thinking "nobody will care about this in 30 years," might still be running in 30 years. And someone will care very much. The shortcuts you take, the assumptions you make, the documentation you skip—these become someone else's crisis decades later.
+
+If you're writing new code right now: document your assumptions. Write tests. Make your code readable. Comment the weird stuff. Future you, or future someone else, will thank you.
+
+If you're maintaining legacy code right now: you're not alone. Every generation of developers has inherited code from the previous generation. Y2K was just the most dramatic example of something that happens constantly: we're all maintaining systems we don't fully understand, making educated guesses, and hoping we don't break anything important.
 
 ## The Chesterton's Fence of Code
 
@@ -202,9 +236,13 @@ Most legacy code won't be preserved. It will be rewritten, abandoned, or lost. T
 
 Future digital archaeologists will study our code the way we study ancient texts. What will they learn about us? What will they think of our practices, our choices, our bugs?
 
+You are both the archaeologist and the artifact. You're excavating past developers' work while simultaneously creating artifacts for future archaeologists. Every line you write becomes part of the dig site for whoever comes next.
+
 ## Making Peace With Legacy
 
 If you work in software long enough, you will work on legacy code. There's no avoiding it. All code becomes legacy eventually, including the code you're writing right now.
+
+**For those maintaining legacy code:**
 
 **Accept that it's not about you.** The code is bad because of accumulated decisions over time, not because you're a bad developer. Your job is to make it better, not to take it personally.
 
@@ -212,11 +250,23 @@ If you work in software long enough, you will work on legacy code. There's no av
 
 **Set boundaries.** You can't fix everything. You can't work 80-hour weeks forever. Do what you can, then go home. The code will still be broken tomorrow, and that's okay.
 
-**Learn from it.** Every bad practice you see in legacy code is a lesson in what not to do. Every good practice is a lesson in what works long-term.
+**Learn from it.** Every bad practice you see in legacy code is a lesson in what not to do. Every good practice is a lesson in what works long-term. You're getting an education in what survives long-term and what doesn't.
 
-**Take pride in maintenance.** Keeping systems running is valuable work. It's not glamorous, but it matters. The world runs on maintained systems.
+**Take pride in maintenance.** Keeping systems running is valuable work. It's not glamorous, but it matters. The world runs on maintained systems. You're doing archaeology and construction simultaneously—preserving what works while carefully modernizing what doesn't.
 
-**Write code you'd want to inherit.** Someday, your code will be legacy. Write it as if the person maintaining it is a serial killer who knows where you live. (This advice is from John Woods, and it's perfect.)
+**For those writing new code:**
+
+**Document your assumptions.** That clever optimization? Explain why it's there. The weird workaround? Comment what bug it fixes. The unusual architecture? Write down why you chose it. Your future self will thank you. So will the archaeologist who inherits your code.
+
+**Write tests.** Not just because tests catch bugs, but because tests document behavior. When someone needs to understand your code years from now, passing tests tell them what the code is supposed to do.
+
+**Make it readable.** Clever code impresses other programmers for about five minutes. Readable code helps other programmers for years. Choose clarity over cleverness.
+
+**Think long-term.** The code you're writing might still be running in 20 years. Will it be maintainable? Will someone be able to understand it? Will it make future you, or future someone else, curse your name?
+
+**For everyone:**
+
+**Write code you'd want to inherit.** Someday, your code will be legacy. Write it as if the person maintaining it is a serial killer who knows where you live. (This advice is from John Woods, and it's perfect.) Treat your future maintainer the way you wish past developers had treated you.
 
 Legacy code is not your enemy. It's your inheritance, your responsibility, and sometimes, your teacher.
 
