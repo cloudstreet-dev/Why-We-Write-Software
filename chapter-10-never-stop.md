@@ -14,7 +14,15 @@ Software development is not about reaching a destination. It's about the journey
 
 Here's why we'll never run out of things to build:
 
-**Every solution raises expectations.** When computers could only show text, we wanted graphics. When we got graphics, we wanted 3D. When we got 3D, we wanted it photorealistic. When we got photorealistic, we wanted it at 120fps. When we got that, we wanted it in VR. And so on, forever.
+**Every solution raises expectations.**
+
+In user interfaces: when computers could only show text, we wanted graphics. When we got graphics, we wanted 3D. When we got 3D, we wanted it photorealistic. When we got photorealistic, we wanted it at 120fps. When we got that, we wanted it in VR.
+
+In infrastructure: when servers took weeks to provision, we wanted virtualization. When we got VMs, we wanted containers. When we got containers, we wanted orchestration. When we got Kubernetes, we wanted service meshes. Each layer of abstraction creates demand for the next.
+
+In data: when we could store gigabytes, we wanted terabytes. When we got terabytes, we wanted petabytes. When we got the storage, we wanted faster queries. When we got faster queries, we wanted real-time analytics. When we got real-time, we wanted predictive models.
+
+The pattern repeats across every domain: solve one problem, raise the bar for the next. And so on, forever.
 
 **Every abstraction enables new applications.** The web browser abstracted away network protocols and document rendering, which enabled web applications. Web applications enabled SaaS. SaaS enabled the API economy. APIs enabled low-code platforms. Each layer makes new things possible that we couldn't imagine before.
 
@@ -211,6 +219,14 @@ That's continuity. That's legacy. That's meaning.
 
 ## The Final Answer
 
+This book started with a question: Why do we write software?
+
+We've explored the history—from Ada Lovelace's algorithm for a computer that never existed, to the moth that became the first bug, to the Y2K crisis that proved legacy code matters. We've seen how software fits into the grand arc of human creation, alongside cathedrals and symphonies and all the things humans build to leave their mark.
+
+We've examined the different kinds of software we write: games that create joy, enterprise systems that pay the bills, infrastructure that nobody sees but everything depends on. We've looked at the bargain between programmers and society, the gift economy of open source, the myth of "done," and the challenge of maintaining code written by ghosts.
+
+Through all of this, one truth emerges: we write software because it's an expression of who we are.
+
 So: Why do we write software?
 
 Because problems exist and we can solve them. Because systems are inefficient and we can improve them. Because the world could be different and we can make it so.
@@ -230,6 +246,10 @@ Because the alternative—not building, not creating, not solving—feels like g
 We write software because we're human, and humans make things.
 
 We'll never stop because the work is never finished, and we're okay with that.
+
+And that's not a bug. It's a feature.
+
+The endless continuation isn't a flaw in software development—it's the point. The journey is the destination. The process is the purpose. We don't write software to finish writing software. We write software because writing software is what we do, who we are, and what we'll keep doing as long as problems exist and we have the tools to solve them.
 
 The bugs will continue. The requirements will change. The technologies will evolve. The problems will persist and multiply.
 
@@ -269,7 +289,29 @@ Commit by commit.
 
 Thank you for being part of it.
 
-Now go write some code.
+---
+
+This book ends here. But your work continues.
+
+There's code to write. Problems to solve. Systems to build. Bugs to fix. Features to ship. Legacy to maintain. Software to create.
+
+Pick up your keyboard. Open your editor. Load your IDE.
+
+Write the next function. Fix the next bug. Build the next feature. Add your line to the cathedral we're all building together.
+
+The world needs your code. Your solutions. Your perspective. Your contribution to the endless, evolving, never-finished project of building software.
+
+So go. Write. Create. Build.
+
+Not because you have to.
+
+Because you want to.
+
+Because this is what we do.
+
+---
+
+*Now go write some code.*
 
 ---
 
