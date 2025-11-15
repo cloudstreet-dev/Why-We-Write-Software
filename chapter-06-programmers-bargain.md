@@ -4,19 +4,23 @@ Society has a deal with programmers, though it's never been written down. It goe
 
 For a few decades, this bargain worked remarkably well. Then it got complicated.
 
+Whether you're building games, maintaining enterprise systems, writing infrastructure code, or contributing to open source, you're part of this bargain. The terms might differ—game developers face crunch culture, enterprise developers face bureaucracy, infrastructure developers face invisibility—but we're all negotiating the same fundamental exchange: our skills and time for compensation and working conditions.
+
+This chapter is about understanding that bargain, and whether we're getting a fair deal.
+
 ## The Golden Age That Maybe Never Was
 
 There's a nostalgia among older programmers for the 1990s and early 2000s—a time when developers were rare, valuable, and treated like wizards. Companies needed websites. They needed database applications. They needed someone who understood this internet thing. If you knew HTML and JavaScript, you could name your price.
 
-The bargain was simple then: businesses didn't understand technology, but they knew they needed it. Programmers understood technology, so they got autonomy, respect, and good compensation. You could show up in a t-shirt and sandals, work weird hours, and as long as you delivered working software, nobody bothered you.
+The bargain with employers was simple then: businesses didn't understand technology, but they knew they needed it. Programmers understood technology, so they got autonomy, respect, and good compensation. You could show up in a t-shirt and sandals, work weird hours, and as long as you delivered working software, nobody bothered you.
 
 This probably wasn't as universal as memory suggests—there were always corporate dress codes and pointless meetings and managers who didn't understand what programmers did. But there was a window where technical expertise translated directly into power and freedom.
 
-Then software ate the world, and the world noticed.
+Then software ate the world, and the world noticed. Suddenly, everyone understood that software was critical. And with that understanding came expectations.
 
 ## What Society Wants From Us
 
-Let's be explicit about what society expects from programmers in 2025:
+The broader social bargain—what society as a whole expects from programmers—has expanded dramatically. Let's be explicit about what's expected in 2025:
 
 **Build everything, constantly.** Every business needs software. Every service needs an app. Every process needs automation. We're expected to digitize everything from ordering food to filing taxes to finding love. The demand is infinite.
 
@@ -38,7 +42,9 @@ The bargain is starting to look a little one-sided.
 
 ## What We Want In Return
 
-Programmers want different things depending on who you ask, but there are common themes:
+So that's what society expects. What about our side of the bargain? What do programmers want from employers and from the industry more broadly?
+
+The specifics vary—a game developer might prioritize creative freedom, an enterprise developer might prioritize stability, an infrastructure developer might prioritize technical depth. But there are common themes:
 
 **Autonomy.** Let us solve problems our way. Don't micromanage. Don't make us use specific technologies for political reasons. Trust that we know what we're doing.
 
@@ -94,7 +100,13 @@ Why? Several reasons, all of them bad:
 
 The result is that many programmers worry about their careers ending at 40 or 50. Some transition into management (whether they want to or not). Some become consultants. Some leave tech entirely. A few lucky ones find companies that value experience and stay as individual contributors.
 
-This is a waste of talent and institutional knowledge. But it's the current state of the bargain: we'll pay you well while you're young, but we probably won't keep you employed until retirement.
+Here's a real example: a 52-year-old developer with 25 years of experience applies for a position. Her resume shows she's worked on everything from embedded systems to cloud architecture. She's mentored dozens of junior developers. She's led major migrations and rescued failing projects. She's kept up with technology—her GitHub shows recent contributions in Rust and TypeScript.
+
+She doesn't get an interview. The company hires a 28-year-old bootcamp graduate instead. Not because the younger candidate is better qualified, but because they're cheaper and "fit the culture better." What "culture fit" really means: the team is young, works late, and the hiring manager is uncomfortable managing someone who could be his mother.
+
+The experienced developer knows this. She's been rejected dozens of times for unstated reasons that all boil down to age. She's considering lying about her graduation year on her resume, or just leaving the industry entirely.
+
+This is a waste of talent and institutional knowledge. But it's the current state of the bargain between society and older programmers: we'll pay you well while you're young, but we probably won't keep you employed until retirement.
 
 ## The Bootcamp Promise
 
@@ -178,7 +190,7 @@ Here's what I've learned about the programmer's bargain:
 
 **But less power than you'd like.** You're still subject to economic forces, industry trends, and decisions made by people who don't understand technology. You can't control everything.
 
-**The bargain is individual and collective.** What you personally negotiate with your employer is your individual bargain. But the broader relationship between society and programmers affects everyone. Both levels matter.
+**The bargain is individual and collective.** What you personally negotiate with your employer is your individual bargain. But the broader relationship between society and programmers affects everyone. Whether you're crunching to ship a game, maintaining a legacy enterprise system, optimizing database queries, or contributing to open source in your spare time—we're all navigating variations of the same fundamental negotiation. Both levels matter.
 
 **It's worth thinking about explicitly.** Most people don't think about the terms of their employment beyond salary and benefits. But understanding what you're trading—your time, skills, creativity, life energy—for what you get in return—money, security, autonomy, purpose—helps you make better decisions.
 
