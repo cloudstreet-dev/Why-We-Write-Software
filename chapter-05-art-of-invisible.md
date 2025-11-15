@@ -2,13 +2,13 @@
 
 When you turn on your computer, about a million things happen before you see the login screen. The BIOS checks hardware. The bootloader loads the operating system kernel. The kernel initializes device drivers, mounts filesystems, starts system services. Processes spawn. Network connections establish. Graphical interfaces render.
 
-You notice none of this. If everything works correctly, it's invisible.
+You notice none of this. If everything works correctly, you don't need to.
 
 This is the highest achievement in certain kinds of software: to be so reliable, so transparent, so well-designed that users forget it exists. We write infrastructure software not to be noticed, but to enable everything else.
 
 ## The Plumbing of Reality
 
-Every building has plumbing. You think about it when it breaks—when the toilet won't flush, when the water pressure drops, when pipes freeze in winter. The rest of the time, it's invisible. You turn on the tap, and water flows. You flush, and waste disappears. The system works.
+Every building has plumbing. You think about it when it breaks—when the toilet won't flush, when the water pressure drops, when pipes freeze in winter. The rest of the time, you don't think about it at all. You turn on the tap, and water flows. You flush, and waste disappears. The system works.
 
 Operating systems, databases, web servers, networking protocols—this is the plumbing of the digital world. When it works, you forget it's there. When it breaks, nothing else works.
 
@@ -22,7 +22,7 @@ Let's talk about what happens when you visit a website:
 
 You type a URL. Your browser needs to convert that domain name into an IP address, so it queries DNS—the Domain Name System, a distributed database that runs on thousands of servers worldwide. DNS was designed in the 1980s and still works, mostly unchanged, because it was designed right the first time.
 
-Your browser establishes a TCP connection to the server at that IP address. TCP—Transmission Control Protocol—ensures that data packets arrive in order, without errors, even though they might take different routes through the internet. This is harder than it sounds. TCP handles congestion control, retransmission, flow control, all invisibly.
+Your browser establishes a TCP connection to the server at that IP address. TCP—Transmission Control Protocol—ensures that data packets arrive in order, without errors, even though they might take different routes through the internet. This is harder than it sounds. TCP handles congestion control, retransmission, flow control—all happening behind the scenes.
 
 If it's HTTPS, you establish a TLS connection first. Your browser and the server perform a cryptographic handshake, exchanging keys, verifying certificates, negotiating encryption algorithms. This happens in milliseconds. You see a little padlock icon.
 
@@ -33,6 +33,39 @@ The response travels back through all these layers. Your browser renders HTML, e
 You see a web page. You waited maybe half a second, if that. You have no idea that hundreds of different software components, written by thousands of different developers over decades, just worked together perfectly to show you a cat photo.
 
 This is infrastructure software. It's the stack beneath the stack beneath the stack.
+
+## The Save Button That Disappeared
+
+Here's a case study in infrastructure becoming invisible: the evolution of saving documents.
+
+In the 1980s and 90s, you had to manually save your work. You'd type for a while, then hit Ctrl+S. Forget to save? Lose everything when the computer crashes. Everyone learned this lesson the hard way—usually after losing hours of work to a power outage or system freeze.
+
+So software added autosave. Every few minutes, your work would be saved automatically to a temporary file. This was better, but not great. You'd still lose a few minutes of work in a crash. And the autosave process would pause your typing for a second while it wrote to disk—annoying but tolerable.
+
+Then systems got smarter. Autosave moved to a background thread so it wouldn't interrupt your work. It saved differential changes instead of the entire document, making saves faster and less disruptive. Recovery files were created so you could restore after crashes. All of this required infrastructure: file locking mechanisms so multiple processes don't corrupt the same file, transactional file systems that can roll back incomplete writes, memory management to buffer changes efficiently.
+
+Modern cloud-based editors like Google Docs took it further: there is no save button. Every keystroke is saved to the server as you type. The document is never "unsaved." Collaboration means multiple people can edit simultaneously. Version history means you can go back to any previous state. All of this is backed by operational transform algorithms, conflict resolution systems, real-time synchronization protocols, distributed databases handling millions of concurrent edits.
+
+The user experience is simple: you type, and your work is safe. That's it.
+
+Behind that simplicity is staggering complexity:
+- Client-side buffering of keystrokes to reduce network traffic
+- Operational transformation to merge concurrent edits without conflicts
+- WebSocket connections for real-time updates
+- Database sharding to handle scale
+- Conflict-free replicated data types (CRDTs) for distributed consistency
+- Caching layers to minimize latency
+- Backup systems to prevent data loss
+- Load balancers to distribute traffic
+- Monitoring systems to detect and recover from failures
+
+Users don't see any of this. They don't need to. The infrastructure is so good that the concept of "saving" has become obsolete. The software just works.
+
+This is the pinnacle of infrastructure design: making complex things simple, making necessary things automatic, making the whole system fade into the background until you forget it exists.
+
+The developers who built this don't get credit from users—users don't even know the save problem was solved because they've never experienced the anxiety of losing unsaved work. But ask any writer who lived through the "remember to save" era, and they'll tell you: this is infrastructure that changed how people work.
+
+That autosave infrastructure depends on databases—systems designed to safely store and retrieve data even when things go wrong. And the people who build databases are solving some of the hardest problems in software.
 
 ## The Database People
 
@@ -102,11 +135,13 @@ Some developers specialize in making things fast. Not regular fast—blindingly,
 
 This is a dark art. It requires understanding computer architecture at a deep level—cache hierarchies, branch prediction, instruction pipelining, memory bandwidth. It requires measuring everything, because intuition about performance is usually wrong.
 
-The best performance optimizations are invisible to users. The software just feels fast. Responsive. Snappy. You don't know that someone spent three weeks optimizing the rendering pipeline to squeeze out an extra 5 milliseconds per frame, but you can feel the difference.
+The best performance optimizations go unnoticed. The software just feels fast. Responsive. Snappy. You don't know that someone spent three weeks optimizing the rendering pipeline to squeeze out an extra 5 milliseconds per frame, but you can feel the difference.
 
 Game developers understand this. So do database developers. So does anyone working on high-frequency trading systems or real-time embedded software. Performance isn't just a nice-to-have; it's the difference between software that works and software that doesn't.
 
-## The Invisible Achievement
+Whether it's autosave, databases, operating systems, protocols, or performance optimization, all infrastructure work shares a paradox: the better you do your job, the less recognition you get.
+
+## The Paradox of Infrastructure
 
 Here's the paradox of infrastructure software: the better it works, the less credit you get.
 
@@ -140,7 +175,7 @@ There's a certain mindset required for infrastructure development:
 
 This is not for everyone. Some developers want to ship features, see immediate impact, iterate quickly. That's fine. The world needs those developers too.
 
-But the world also needs people who are willing to spend months optimizing a data structure, or years designing a protocol, or decades maintaining a critical system. The people who are comfortable being invisible. The people who measure success by the absence of problems.
+But the world also needs people who are willing to spend months optimizing a data structure, or years designing a protocol, or decades maintaining a critical system. The people who are comfortable working behind the scenes. The people who measure success by the absence of problems.
 
 ## The Deep Satisfaction
 
