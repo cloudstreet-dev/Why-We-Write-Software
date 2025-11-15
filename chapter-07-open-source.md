@@ -8,6 +8,10 @@ Open source software operates on similar principles. We give away code—sometim
 
 But it works. And it's eating the software world.
 
+Think about why you write software. Whatever domain you're in—games, enterprise, infrastructure—you're using open source. The language you code in is probably open source. Your editor might be open source. The libraries you import, the frameworks you build on, the tools you deploy with—open source, open source, open source. Even if you're building proprietary software, you're standing on a foundation of gifts.
+
+And in 2025, as AI coding assistants become ubiquitous, they're being trained on open source code. The gift economy now feeds the machine learning models that help you write code faster. The potlatch has expanded: we're giving away our code not just to other humans, but to systems that will learn from it and assist future programmers. This magnifies both the generosity and the questions about fairness.
+
 ## The Gift That Keeps On Taking
 
 Let's start with a simple fact: most modern software depends on open source code written by volunteers.
@@ -40,7 +44,9 @@ People contribute to open source for many reasons, none of them simple:
 
 **Necessity.** If you use an open source library and find a bug, you can either wait for someone else to fix it or fix it yourself. Fixing it yourself and contributing the fix back benefits everyone.
 
-None of these reasons involve making money, at least not directly. But they're all rational motivations. The gift economy works because people get non-monetary value from participating.
+None of these reasons involve making money, at least not directly. But they're all rational motivations. Like the potlatch, where giving away wealth creates status and social bonds, open source contributions create reputation, knowledge, and community. The gift economy works because people get non-monetary value from participating.
+
+You're not just writing code—you're participating in a ceremony of reciprocal generosity. You give your code away, someone else improves it, you both benefit. The more you give, the more status you gain. The community becomes stronger through the exchange. It's potlatch, digitized.
 
 ## The Maintainer's Burden
 
@@ -57,6 +63,28 @@ They're right—they do owe users nothing. But users often don't see it that way
 The worst cases involve entitled users demanding features, criticizing maintainers, or harassing them when bugs aren't fixed immediately. There are famous examples of maintainers quitting because the abuse became too much.
 
 This is the cost of the gift economy: the gift creates expectations that the giver might not want to fulfill. And unlike commercial software, there's no contract, no SLA, no customer support team. Just a person, probably with a day job, trying to help.
+
+## The Day 11 Lines of Code Broke the Internet
+
+Here's a story that captures both the power and fragility of the open source ecosystem:
+
+In March 2016, a developer named Azer Koçulu got into a dispute with NPM (Node Package Manager) and a company over the name of one of his packages. Frustrated, he decided to unpublish all 273 of his packages from NPM.
+
+One of those packages was called "left-pad." It was 11 lines of code. It did one thing: add padding to the left side of a string. That's it. A function you could write yourself in about 60 seconds.
+
+But thousands of projects depended on left-pad. And many of those projects were dependencies of other projects. When left-pad disappeared, builds started failing worldwide. Major companies couldn't deploy. Developers couldn't install packages. For several hours, a significant chunk of the JavaScript ecosystem was broken.
+
+Why? Because the potlatch economy is built on trust and availability. When you give away code, others build on it. They assume it will remain available. They don't copy it into their own projects—that's what dependency management is for. They just reference it: "I need left-pad version 1.0.0."
+
+When one person decides to take their gift back, the whole tower of dependencies can collapse.
+
+NPM quickly restored left-pad (with Koçulu's permission initially, then without it as policy evolved). Builds started working again. The crisis passed. But it revealed something important: modern software development is built on a foundation of gifts, given freely by individuals, that could disappear at any moment.
+
+There's no contract that says Koçulu had to keep left-pad available. He gave it away for free, maintained it for free, and had every right to remove it. But the ecosystem had built dependencies on his gift, creating an obligation he never agreed to.
+
+This is the paradox of open source at scale: individual generosity becomes critical infrastructure, but infrastructure needs stability and governance that individual generosity can't always provide. The gift economy works beautifully until the gift becomes too important, at which point it needs to become something else—a commons, a foundation, a governed project.
+
+The left-pad incident led to changes in how NPM handles package deletion. It sparked debates about dependencies and trust. And it reminded everyone: when you build on open source, you're building on gifts. Most of the time, the givers keep giving. But they don't have to.
 
 ## The Corporate Paradox
 
@@ -191,7 +219,7 @@ Open source isn't just a software development methodology. It's a different way 
 
 The larger lesson is that human motivation is more complex than "people only work for money." We also work for status, belonging, purpose, learning, and the satisfaction of creating something useful.
 
-Open source harnesses these motivations at massive scale.
+Open source harnesses these motivations at massive scale. It's a global potlatch where millions of developers participate in gift-giving ceremonies, building status and community through generosity. The traditional economy measures value in dollars. The gift economy measures value in reputation, learning, and shared prosperity.
 
 ## The Personal Question
 
