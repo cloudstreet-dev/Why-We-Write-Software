@@ -2,11 +2,11 @@
 
 The first computer bug was a moth. This is not a metaphor.
 
-On September 9, 1947, engineers working on the Harvard Mark II computer found the machine malfunctioning. They opened the relay panels and discovered an actual moth, wings spread, lodged between relay contacts. Grace Hopper, who was there that day, taped the moth into the logbook with the annotation "First actual case of bug being found."
+On September 9, 1947, engineers working on the Harvard Mark II computer found the machine malfunctioning. They opened the relay panels and discovered an actual moth, wings spread, lodged between relay contacts. Someone on the team—history isn't certain who—taped the moth into the logbook with the annotation "First actual case of bug being found." Grace Hopper was working on the Mark II at the time and later popularized the story, cementing the moth's place in computing folklore.
 
-The joke, of course, is that engineers had been calling problems "bugs" for decades before that moth made its fateful flight. Thomas Edison wrote about bugs in 1878. The term was slang, shorthand for those mysterious gremlins that made things not work. But something about that moth crystallized the metaphor forever. Here was proof: our machines were vulnerable to the natural world, to chaos, to tiny winged creatures that could bring our grand logic to a halt.
+The joke, of course, is that engineers had been calling problems "bugs" for decades before that moth made its fateful flight. Thomas Edison wrote about bugs in 1878. The term was engineering slang, shorthand for those mysterious gremlins that made things not work. The moth didn't create the metaphor—it just gave us a perfect, literal example of it. Here was a tiny creature that could bring our grand logic to a halt, proof that our machines were vulnerable to the chaos of the physical world.
 
-This is a book about why we write software, but it begins with failure because that's where all software begins. With a problem. With something broken, or something that could be better, or something that doesn't exist yet but should. We write software because the world is full of bugs, metaphorical and otherwise.
+This is a book about why we write software, but it begins with failure because that's where all software begins. With a problem. With something broken, or something that could be better, or something that doesn't exist yet but should. Every program is born from imperfection—either in the world we're trying to improve, or in our previous attempts to improve it. We write software because the world is full of bugs, metaphorical and otherwise, and fixing problems is what we do.
 
 ## The First Programs Were Woven
 
